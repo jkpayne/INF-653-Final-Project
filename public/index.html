@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US States REST API</title>
+</head>
+<body>
+    <div class="container">
+        <h1>US States REST API</h1>
+        <p>Welcome! This is a Node.js + Express + MongoDB REST API for US States data.</p>
+        <h2>Available Endpoints</h2>
+        <ul>
+            <li><code>GET /states/</code> &mdash; All state data</li>
+            <li><code>GET /states/?contig=true</code> &mdash; Contiguous states only</li>
+            <li><code>GET /states/?contig=false</code> &mdash; Non-contiguous states (AK, HI)</li>
+            <li><code>GET /states/:state</code> &mdash; All data for a single state</li>
+            <li><code>GET /states/:state/funfact</code> &mdash; A random fun fact</li>
+            <li><code>GET /states/:state/capital</code> &mdash; Capital city</li>
+            <li><code>GET /states/:state/nickname</code> &mdash; State nickname</li>
+            <li><code>GET /states/:state/population</code> &mdash; Population</li>
+            <li><code>GET /states/:state/admission</code> &mdash; Admission date</li>
+            <li><code>POST /states/:state/funfact</code> &mdash; Add fun facts</li>
+            <li><code>PATCH /states/:state/funfact</code> &mdash; Update a fun fact</li>
+            <li><code>DELETE /states/:state/funfact</code> &mdash; Delete a fun fact</li>
+        </ul>
+        <p>The <code>:state</code> parameter is a 2-letter state abbreviation (e.g. <code>KS</code>, <code>MO</code>).</p>
+    </div>
+</body>
+</html>
